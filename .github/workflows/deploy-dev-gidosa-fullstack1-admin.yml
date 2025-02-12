@@ -1,0 +1,16 @@
+name: gidosa-fullstack1-admin dev
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+jobs:
+  build-codedeploy:
+    environment: dev
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4

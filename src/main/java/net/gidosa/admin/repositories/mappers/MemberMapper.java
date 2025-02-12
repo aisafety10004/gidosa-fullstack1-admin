@@ -1,0 +1,9 @@
+package net.gidosa.admin.repositories.mappers;
+
+import org.apache.ibatis.annotations.Mapper;
+import java.time.LocalDateTime;
+
+@Mapper
+public interface MemberMapper {
+    LocalDateTime test1();
+}
